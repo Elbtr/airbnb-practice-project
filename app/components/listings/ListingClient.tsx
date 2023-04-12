@@ -1,7 +1,7 @@
 "use client";
 
 import Container from "@/app/components/Container";
-import categories from "@/app/components/icon/categories";
+import { DUMMY_DATA } from "@/app/components/categoriesData";
 import ListingHead from "@/app/components/listings/ListingHead";
 import { Range } from "react-date-range";
 import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
@@ -96,7 +96,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
   }, [dateRange, listing.price]);
 
   const category = useMemo(() => {
-    return categories.find((item) => item.label === listing.category);
+    return DUMMY_DATA.find((item) => item.label === listing.category);
   }, [listing.category]);
 
   return (

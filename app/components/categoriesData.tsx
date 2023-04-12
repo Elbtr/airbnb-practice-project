@@ -16,7 +16,7 @@ import { MdOutlineVilla } from "react-icons/md";
 import { FaSkiing } from "react-icons/fa";
 import { BsSnow } from "react-icons/bs";
 
-const categories = [
+export const DUMMY_DATA = [
   {
     label: "Beach",
     icon: TbBeach,
@@ -93,4 +93,3 @@ const categories = [
     description: "This property is luxurious!",
   },
 ];
-export default categories;

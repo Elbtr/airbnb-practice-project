@@ -24,7 +24,7 @@ const RegisterModal = () => {
   const toggle = useCallback(() => {
     loginModal.onOpen();
     registerModal.onClose();
-  }, []);
+  }, [loginModal, registerModal]);
 
   const {
     register,

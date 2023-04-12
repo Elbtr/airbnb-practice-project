@@ -8,7 +8,7 @@ import { useMemo, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import Heading from "../Heading";
-import categories from "../icon/categories";
+import { DUMMY_DATA } from "../categoriesData";
 import CategoryInput from "../inputs/CategoryInput";
 import Counter from "../inputs/Counter";
 import CountrySelect from "../inputs/CountrySelect";
@@ -136,7 +136,7 @@ const RentModal = () => {
       overflow-y-auto
       "
       >
-        {categories.map((item) => (
+        {DUMMY_DATA.map((item) => (
           <div key={item.label} className="col-span-1">
             <CategoryInput
               onclick={(category) => setCustomValue("category", category)}

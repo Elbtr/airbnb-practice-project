@@ -3,7 +3,7 @@
 import Container from "./Container";
 import { usePathname, useSearchParams } from "next/navigation";
 import CategoryBox from "./CategoryBox";
-import categories from "./icon/categories";
+import { DUMMY_DATA } from "./categoriesData";
 
 const Categories = () => {
   const params = useSearchParams();
@@ -27,7 +27,7 @@ const Categories = () => {
     overflow-x-auto
     "
       >
-        {categories.map((item) => (
+        {DUMMY_DATA.map((item) => (
           <CategoryBox
             key={item.label}
             label={item.label}

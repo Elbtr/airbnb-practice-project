@@ -68,7 +68,6 @@ const PropertiesClient: React.FC<PropertiesClientProps> = ({
             disabled={deletingId === listing.id}
             actionLabel="Delete prperty"
             currentUser={currentUser}
-            ifExist
           />
         ))}
       </div>
